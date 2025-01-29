@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Fantasy VII REBIRTH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo en la esquina superior izquierda -->
+        <div class="logo-container">
+            <img src="./media/logo.png" alt="Logo Final Fantasy VII" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <section id="video">
+            <h2>Trailer Final Fantasy VII Rebirth PC</h2>
+            <div class="video-container">
+                <video id="main-video" controls>
+                    <source src="./media/FFVII.mp4" type="video/mp4">
+                    <track src="./media/captions/FFVII_ENG.vtt" label="English" kind="subtitles" srclang="en" default>
+                    <track src="./media/captions/FFVII_ES.vtt" label="Español" kind="subtitles" srclang="es">
+                    <track src="./media/captions/FFVII_CA.vtt" label="Català" kind="subtitles" srclang="ca">
+                    Tu navegador no soporta vídeo HTML5.
+                </video>
+            </div>
+            <div class="video-buttons">
+                <button id="play-pause">⏯️</button>
+                <button id="mute-unmute">🔇</button>
+                <button id="restart">⏮️</button>
+            </div>
+        </section>
+
+
+        <!-- Sección de audio con playlist -->
+        <section id="audio">
+            <h2>Reproductor de Música - Banda Sonora de FFVII</h2>
+            <div class="audio-player">
+                <audio id="audio-element" controls>
+                    <source src="./media/Aerith.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio HTML5.
+                </audio>
+                <ul id="playlist">
+                    <li data-src="./media/Aerith.mp3" class="active">Aerith's Theme</li>
+                    <li data-src="./media/sephiroth.mp3">One-Winged Angel</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Botones de zoom -->
+        <div class="zoom-buttons">
+            <button id="zoom-in">Aumentar</button>
+            <button id="zoom-out">Reducir</button>
+        </div>
+
+        <!-- Galería de imágenes -->
+        <section class="galeria">
+            <h2>Galería de Personajes</h2>
+            <div class="grid-container">
+                <!-- Primera fila -->
+                <img src="./media/gallery/cloud.webp" alt="Cloud Strife">
+                <img src="./media/gallery/tifa.webp" alt="Tifa Lockhart">
+                <img src="./media/gallery/aerith.webp" alt="Aeris Gainsborough">
+                <img src="./media/gallery/barett.webp" alt="Barret Wallace">
+                <!-- Segunda fila -->
+                <img src="./media/gallery/yuffie.webp" alt="Yuffie Kisaragi">
+                <img src="./media/gallery/vincent.webp" alt="Vincent Valentine">
+                <img src="./media/gallery/cid.webp" alt="Cid Highwind">
+                <img src="./media/gallery/sephiroth.webp" alt="Sephiroth">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
